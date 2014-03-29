@@ -1,6 +1,5 @@
 class Item < ActiveRecord::Base
-  KINDS = [{name: 'New face', subtitle: ''},
-           {name: 'Help', subtitle: ''},
+  KINDS = [{name: 'Help', subtitle: ''},
            {name: 'Interesting', subtitle: 'News, Articles, Tools, Best Practices, Project Milestones, etc'},
            {name: 'Event', subtitle: ''}]
   default_scope { order('date ASC') }
